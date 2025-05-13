@@ -1,0 +1,44 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 700px;
+  margin: auto;
+  padding: 1rem;
+}
+h1 {
+  text-align: center;
+}
+form {
+  display: none;
+  flex-direction: column;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+form input, form textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+}
+button {
+  margin-top: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+.post {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.actions button {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+  h1 {
+    font-size: 1.2rem;
+  }
+}

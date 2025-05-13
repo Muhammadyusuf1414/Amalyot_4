@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Blog Postlar</h1>
+
+  <button onclick="showCreateForm()">+ Yangi post qo‘shish</button>
+
+  <form id="postForm" onsubmit="submitPost(event)">
+    <input type="text" id="title" placeholder="Sarlavha" required>
+    <textarea id="content" rows="5" placeholder="Kontent" required></textarea>
+    <input type="text" id="author" placeholder="Muallif ismi" required>
+    <button type="submit">Saqlash</button>
+    <button type="button" onclick="hideForm()">Bekor qilish</button>
+    <input type="hidden" id="postId">
+  </form>
+
+  <div id="posts"></div>
+
+  <script src="java.js"></script>
+</body>
+</html>
